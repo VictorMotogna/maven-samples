@@ -1,4 +1,4 @@
-package calculator;
+package com.calculator;
 
 public class Operation {
     private int operator1;
