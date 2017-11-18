@@ -13,7 +13,7 @@ public class Engine {
         Operation mul = new Multiply(1.0, 2.0);
         System.out.println(mul.computeResult());
 
-        Operation div = new Division(1.0, 2.0);
+        Operation div = new Division(0.0, 1.0);
         System.out.println(div.computeResult());
     }
 }

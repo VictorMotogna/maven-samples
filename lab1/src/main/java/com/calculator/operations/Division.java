@@ -11,6 +11,11 @@ public class Division implements Operation {
 
     @Override
     public double computeResult() {
-        return operator1 / operator2;
+        try {
+            return operator1 / operator2;
+        } catch(Exception e) {
+            e.printStackTrace();
+            return 0.0;
+        }
     }
 }
