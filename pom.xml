@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.tora</groupId>
@@ -17,6 +17,8 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<jacoco-version>0.7.9</jacoco-version>
+		<jmh.version>1.19</jmh.version>
+		<uberjar.name>benchmarks</uberjar.name>
 	</properties>
 
 	<!-- common dependencies for all modules -->
@@ -86,7 +88,11 @@
 		<module>day1</module>
 		<module>day2</module>
 		<module>lab1</module>
+		<module>lab2</module>
+		<module>Lab3</module>
 		<module>report</module>
+		<module>lab4</module>
+		<module>lab5</module>
 		<!-- add here any other modules -->
 	</modules>
 
