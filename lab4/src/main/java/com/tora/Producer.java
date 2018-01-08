@@ -8,7 +8,7 @@ public class Producer implements Runnable {
 
     protected BlockingQueue queue;
     private String inputFileName;
-    private long couter = 0l;
+    private long counter = 0l;
 
     public Producer(BlockingQueue queue, String inputFileName) {
         this.queue = queue;
@@ -29,7 +29,7 @@ public class Producer implements Runnable {
                 try {
                     person = new Person(p[0] + " " + p[1] + " " + p[2], p[3], p[4]);
                     queue.put(person);
-                    System.out.println("producer: " + (couter++));
+                    System.out.println("producer: " + (counter++));
                 } catch (Throwable t) {}
             }
             queue.put(false);
